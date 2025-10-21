@@ -1,5 +1,15 @@
 {
+  "name": "ai-translator",
+  "version": "1.0.0",
+  "description": "",
   "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "setup": "powershell -ExecutionPolicy Bypass -File scripts/setup.ps1",
+    "run": "powershell -ExecutionPolicy Bypass -File scripts/run.ps1",
+    "test": "powershell -ExecutionPolicy Bypass -File scripts/test.ps1",
+    "start": "node src/node/index.js"
+  },
   "dependencies": {
     "@vitalets/google-translate-api": "^9.2.1",
     "canvas": "^3.2.0",
@@ -12,7 +22,7 @@
     "fs-extra": "^11.3.2",
     "jimp": "^1.6.0",
     "node-fetch": "^3.3.2",
-    "openai": "^6.3.0",
+    "openai": "^6.4.0",
     "path": "^0.12.7",
     "pdf-lib": "^1.17.1",
     "pdf-parse": "^2.2.6",
@@ -24,12 +34,9 @@
     "sharp": "^0.34.4",
     "tesseract.js": "^6.0.1"
   },
-  "name": "ai-translator",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "eslint": "^9.12.0",
+    "prettier": "^3.3.3"
   },
   "keywords": [],
   "author": "",
