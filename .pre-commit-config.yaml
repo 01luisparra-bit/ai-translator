@@ -1,0 +1,12 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: 24.3.0
+    hooks:
+      - id: black
+        exclude: ^(\.venv|venv|env|\.git|\.mypy_cache|output|build|dist)/
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.3.0
+    hooks:
+      - id: ruff
+        args: [--fix]
+        exclude: ^(\.venv|venv|env|\.git|\.mypy_cache|output|build|dist)/

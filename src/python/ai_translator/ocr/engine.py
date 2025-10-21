@@ -1,6 +1,8 @@
 from __future__ import annotations
-import subprocess, shlex
+import subprocess
+import shlex
 from pathlib import Path
+
 
 def ocr_image(image_path: Path, tesseract: str, lang: str = "eng") -> str:
     """

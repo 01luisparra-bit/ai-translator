@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: ai-translator
+Version: 0.1.0
+Summary: AI-powered OCR and translation system
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: requests>=2.31
+Requires-Dist: tenacity>=8.2
+Requires-Dist: rich>=13.7
+Requires-Dist: pillow>=10.3

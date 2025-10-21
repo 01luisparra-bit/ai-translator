@@ -1,7 +1,9 @@
 from __future__ import annotations
-import subprocess, shlex
+import subprocess
+import shlex
 from pathlib import Path
 from typing import List
+
 
 def pdf_to_pngs(pdf_path: Path, out_dir: Path, pdftoppm: str) -> List[Path]:
     """
